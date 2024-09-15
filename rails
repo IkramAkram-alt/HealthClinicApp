@@ -1,0 +1,5 @@
+# config/credentials.yml.edit
+db:
+  username: health_clinic_database
+  password: healthCLinic
+  host: localhost

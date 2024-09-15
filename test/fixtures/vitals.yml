@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  patient: one
+  vital_type: MyString
+  measurement: 1.5
+  units: MyString
+
+two:
+  patient: two
+  vital_type: MyString
+  measurement: 1.5
+  units: MyString

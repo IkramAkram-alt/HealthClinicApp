@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  patients_imported: 1
+  migration_duration: 1.5
+  migration_date: 2024-09-15 20:14:18
+
+two:
+  patients_imported: 1
+  migration_duration: 1.5
+  migration_date: 2024-09-15 20:14:18

@@ -1,0 +1,45 @@
+<h1 class="text-center my-4">Patient Details</h1>
+
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h5 class="mb-0">Patient Information</h5>
+    </div>
+    <div class="card-body">
+      <dl class="row">
+        <dt class="col-sm-3">Health Identifier:</dt>
+        <dd class="col-sm-9"><%= @patient.health_identifier %></dd>
+
+        <dt class="col-sm-3">First Name:</dt>
+        <dd class="col-sm-9"><%= @patient.first_name %></dd>
+
+        <dt class="col-sm-3">Last Name:</dt>
+        <dd class="col-sm-9"><%= @patient.last_name %></dd>
+
+        <dt class="col-sm-3">Date of Birth:</dt>
+        <dd class="col-sm-9"><%= @patient.date_of_birth ? @patient.date_of_birth.strftime("%Y-%m-%d") : 'N/A' %></dd>
+
+        <dt class="col-sm-3">Sex:</dt>
+        <dd class="col-sm-9"><%= @patient.sex %></dd>
+
+        <dt class="col-sm-3">Phone:</dt>
+        <dd class="col-sm-9"><%= @patient.phone %></dd>
+
+        <dt class="col-sm-3">Email:</dt>
+        <dd class="col-sm-9"><%= @patient.email %></dd>
+
+        <dt class="col-sm-3">Address:</dt>
+        <dd class="col-sm-9">
+          <%= @patient.address1 %><br>
+          <%= @patient.address2.present? ? "#{@patient.address2}<br>" : "" %>
+          <%= @patient.address_city %>, <%= @patient.address_province %> <%= @patient.address_postal_code %>
+        </dd>
+      </dl>
+
+      <div class="text-center mt-4">
+        <%= link_to 'Edit', edit_patient_path(@patient), class: 'btn btn-warning me-2' %>
+        <%= link_to 'Back to List', patients_path, class: 'btn btn-secondary' %>
+      </div>
+    </div>
+  </div>
+</div>
